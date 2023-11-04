@@ -6,7 +6,7 @@
 
 - Created - 2023-7
 
-- Technologies Used - HTML5 , Tailwind , JS
+- Technologies Used - HTML5 , Sass , Bootstrap5
 
 - Role - Frontend
 
