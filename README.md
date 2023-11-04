@@ -4,6 +4,8 @@
 
 - Developed by Aida Mousavi
 
+- Non-responsive
+
 - Created - 2023-7
 
 - Technologies Used - HTML5 , Sass , Bootstrap5
