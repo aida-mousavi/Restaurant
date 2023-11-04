@@ -1,0 +1,789 @@
+$primaryColor: #c8a97e;
+$grayText: #d5d1d1;
+$grayText2:#666666;
+
+.topPage {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../img/bg_1.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+
+  > .topPage-information {
+    width: 100%;
+    background-color: rgba(207, 204, 204, 0.236);
+    padding: 10px;
+    justify-content: space-around;
+    color: rgb(174, 170, 170);
+  }
+  > .topPage-menu {
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 15px 0px;
+    // position: fixed;
+
+    > div {
+      color: white;
+      font-size: 28px;
+      font-weight: 900;
+      padding-right: 256px;
+      padding-left: 34px;
+    }
+    > nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 40px;
+
+      > li {
+        padding: 0px 25px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        
+        &:last-child{
+          background-color: $primaryColor;
+          border-radius:5px ;
+          padding: 27px;
+         
+        }
+        > a {
+          color: white;
+        }
+      }
+    }
+  }
+  > .topPage-text {
+    // background-color: rgb(234, 32, 32);
+    width: 100%;
+    height: 55%;
+    justify-content: center;
+    align-items: flex-end;
+    > div {
+      font-size: 80px;
+      color: $primaryColor;
+      width: 100%;
+      text-align: center;
+      font-family: "Dancing Script", cursive;
+      margin: 20px;
+      padding-top: 85px;
+    }
+    > p {
+      color: white;
+      font-size: 40px;
+      text-transform: uppercase;
+      margin: 20px;
+      padding-bottom: 50px;
+    }
+  }
+  > .topPage-img {
+    justify-content: center;
+    margin-top: 20px;
+
+    figure {
+      // background-color: wheat;
+      // border: 1px solid pink;
+      width: 300px;
+      height: 200px;
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: flex;
+        margin: 5px auto;
+      }
+      figcaption {
+        > * {
+          margin-top: 10px;
+          color: white;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+.about-resturant {
+  width: 100%;
+  margin: 60px 0px;
+  height: 130vh;
+
+  > .about-img {
+    width: 55%;
+
+    img {
+      width: 300px;
+      height: 90%;
+      object-fit: cover;
+      margin-left: 25px;
+      &:nth-of-type(2) {
+        margin-top: 40px;
+      }
+    }
+  }
+  > .about-text {
+    width: 45%;
+    margin-top: 40px;
+
+    position: relative;
+    > h3 {
+      font-size: 80px;
+      color: $primaryColor;
+      width: 100%;
+      font-family: "Dancing Script", cursive;
+      padding-left: 20px;
+
+      &::after {
+        color: black;
+        content: "Feliciano Restaurant";
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        @extend .style-title2;
+
+        padding-left: 40px;
+        padding-right: 70px;
+      }
+    }
+    > p,
+    time {
+      margin-top: 130px;
+      font-size: 20px;
+      color: $grayText;
+      padding-left: 40px;
+    }
+    > #contact {
+      margin-top: 70px;
+      color: $primaryColor;
+      font-size: 40px;
+      font-weight: bolder;
+      padding-left: 40px;
+    }
+  }
+  .about-statistics {
+    width: 100%;
+    height: 40vh;
+    justify-content: center;
+
+    > div {
+     
+      text-align: center;
+      width: 240px;
+      height: 100%;
+      margin: 65px 0px;
+      font-size: 55px;
+      font-weight: 700;
+      color: #c8a97e;
+      padding-top: 90px;
+      > p {
+        width: 100%;
+        font-size: 14px;
+        font-weight: normal;
+        color: $grayText2;
+      }
+      &:nth-last-of-type(1){
+        >P{
+width: 300px;
+padding-left: 50px;
+          font-size: 18px;
+        }
+      }
+    }
+
+  }
+}
+.servis {
+  background-color: #fafafa;
+  > .servis-text {
+    width: 100%;
+
+    justify-content: center;
+    > div {
+      font-size: 120px;
+      color: $primaryColor;
+      width: 100%;
+      font-family: "Dancing Script", cursive;
+      padding-left: 20px;
+      position: relative;
+      justify-content: center;
+      margin: 50px 0;
+
+      &::after {
+        content: "Catering Services";
+        color: black;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        position: absolute;
+        top: 85px;
+        left: 35%;
+        @extend .style-title2;
+        padding-left: 40px;
+        padding-right: 70px;
+      }
+    }
+  }
+  .servis-card {
+    justify-content: space-evenly;
+    width: 100%;
+    > div {
+      width: 360px;
+      height: 330px;
+   margin-bottom: 55px;
+      padding: 20px;
+      >div{
+        height: 80px;
+        width: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        background-color: $primaryColor;
+        margin: 0 auto;
+    
+  >img{
+    width: 30px
+   
+  }
+
+      }
+      >h3{
+        font-size: 28px;
+        text-align: center;
+        font-weight: 400;
+        margin: 40px 0px;
+      }
+      >p{
+        color: $grayText2;
+        text-align: center;
+        line-height: 1.5;
+
+      }
+    }
+  }
+}
+
+.stories {
+  width: 100%;
+  justify-content: center;
+  > .stories-text {
+    font-size: 120px;
+    color: $primaryColor;
+    width: 100%;
+    font-family: "Dancing Script", cursive;
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+
+    &::after {
+      content: "Our Menu";
+      color: black;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      position: absolute;
+      top: 85px;
+      left: 40%;
+      @extend .style-title2;
+      padding-left: 40px;
+      padding-right: 70px;
+    }
+  }
+  > .stories-card {
+    width: 100%;
+    justify-content: center;
+    padding: 5px 135px 60px 135px;
+    > div {
+      width: 260px;
+      min-height: 250px;
+   
+      > figure {
+        width: 100%;
+        height: 100%;
+
+        > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+    > .stories-box {
+      padding: 40px 20px;
+   
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      > div {
+        &:nth-of-type(1) {
+          display: flex;
+          justify-content: space-between;
+          > div {
+            &:nth-of-type(1) {
+              font-size: 23px;
+              font-weight: 700;
+            }
+            &:nth-of-type(2) {
+              font-size: 23px;
+              font-weight: 700;
+              color: $primaryColor !important;
+              margin-bottom: 50px;
+            }
+          }
+        }
+        &:nth-of-type(2) {
+          color: #383737;
+        }
+      }
+      > button {
+        padding: 10px 27px;
+        font-size: 18px;
+        background-color: #c8a97e;
+        color: white;
+        border: none;
+        margin-top: 22px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+.chef {
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+
+  > .chef-text {
+    font-size: 140px;
+    height: 45px;
+    color: $primaryColor;
+    width: 100%;
+    font-family: "Dancing Script", cursive;
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+
+    &::after {
+      content: "Catering Services";
+      color: black;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      position: absolute;
+      top: 104px;
+      left: 32%;
+      @extend .style-title2;
+      padding-left: 40px;
+      padding-right: 70px;
+    }
+  }
+  > .chef-img {
+    display: flex;
+    justify-content: space-evenly;
+    > figure {
+      width: 280px;
+      height: 330px;
+
+      margin: 0px 10px;
+      > img {
+        border-radius: 5px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      > figcaption {
+        margin-bottom: 100px;
+        > div {
+          &:nth-of-type(1) {
+            margin: 10px 0px;
+            font-size: 18px;
+            font-weight: 700;
+          }
+          &:nth-of-type(2) {
+            color: $grayText;
+            font-size: 15px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+.fill-form {
+  width: 100%;
+  height: 110vh;
+  width: 100%;
+  background-image: url("../img/bg_3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 0px 0px 100px;
+  // >.form-box{
+
+  > form {
+    width: 50%;
+    padding: 40px;
+    height: 90%;
+    background-color: white;
+    position: relative;
+    > .fill-text {
+      div {
+        &:nth-of-type(1) {
+          width: 100%;
+          height: 30%;
+          font-size: 132px;
+          color: #c8a97e;
+          font-family: "Dancing Script", cursive;
+          position: absolute;
+          top: -122px;
+          right: 5px;
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+        }
+        &:nth-of-type(2) {
+          position: absolute;
+          top: 23px;
+          left: 163px;
+          @extend .style-title2;
+        }
+      }
+    }
+    > .fill-card {
+      padding-top: 50px;
+      height: 70%;
+      width: 100%;
+      justify-content: space-around;
+      padding-bottom: 70px;
+      margin: 30px 0px;
+      .group-card {
+        width: 45%;
+        > label {
+          width: 100%;
+          display: flex;
+          margin-bottom: 6px;
+          font-weight: 600;
+          padding-top: 35px;
+        }
+        > input,
+        select {
+          width: 100%;
+          font-size: 16px;
+          border: 1px solid rgba(148, 148, 148, 0.382);
+          padding: 8px;
+          outline: none;
+        }
+      }
+    }
+    > .fill-button {
+      width: 100%;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      > button {
+        width: 210px;
+        height: 70px;
+        border: none;
+        border-radius: 6px;
+        background-color: #c8a97e;
+        color: white;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+.customer {
+  width: 100%;
+  height: 100vh;
+  > .customer-text {
+    font-size: 120px;
+    height: 20%;
+    color: $primaryColor;
+    width: 100%;
+    font-family: "Dancing Script", cursive;
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    border: 1px solid white;
+
+    &::after {
+      content: "Happy Customer";
+      color: black;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      position: absolute;
+      top: 85px;
+      left: 35%;
+      @extend .style-title2;
+      padding-left: 40px;
+      padding-right: 70px;
+    }
+  }
+  > .customer-comment {
+    justify-content: space-evenly;
+    height: 80%;
+    width: 100%;
+    > figure {
+      width: 350px;
+      height: 80%;
+      padding: 20px;
+      background-color: white;
+      position: relative;
+      > img {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        margin: 0 auto;
+        border-radius: 50%;
+        object-fit: cover;
+        position: relative;
+      }
+      > .quotation {
+        background-color: #c8a97e;
+        width: 33px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+
+        position: absolute;
+        border-radius: 20px;
+        top: 30%;
+        left: 60%;
+        font-size: 25px;
+        color: white;
+      }
+      > figcaption {
+        padding: 10px;
+        > p {
+          color: #d5d1d1;
+          line-height: 1.4;
+          display: flex;
+          text-align: center;
+          padding-top: 10px;
+        }
+        > div {
+          text-align: center;
+          padding: 20px;
+
+          > div {
+            &:nth-of-type(1) {
+              font-size: 30px;
+              padding: 5px;
+            }
+            &:nth-of-type(2) {
+              font-size: 14px;
+              color: $grayText;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.blog {
+  width: 100%;
+
+  background-color: #fafafa;
+  padding:15px 0px 50px 0px;
+  > .blog-text {
+    font-size: 140px;
+    color: $primaryColor;
+    width: 100%;
+    font-family: "Dancing Script", cursive;
+    padding-left: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    &::after {
+      content: "Recent Posts";
+      color: black;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      position: absolute;
+      top: 104px;
+      left: 37%;
+      @extend .style-title2;
+      padding-left: 40px;
+      padding-right: 70px;
+    }
+  }
+  > .blog-img {
+    justify-content: space-around;
+    align-items: center;
+    i{
+      font-size: 20px;
+    }
+    > figure {
+      width: 379px;
+      height: 480px;
+      background-color: white;
+      border: 1px solid black;
+      margin: 30px 30px;
+      > img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+      }
+      > figcaption {
+        padding: 30px;
+        > div {
+          &:nth-of-type(1) {
+            > * {
+              color: $grayText;
+            }
+            > span {
+              padding-right: 10px;
+            }
+          }
+          &:nth-of-type(2) {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            > a {
+              color: black;
+              font-size: 14px;
+            }
+          }
+        }
+        > p {
+          padding: 30px 0px;
+          font-size: 23px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+footer {
+  width: 100%;
+  height: 70vh;
+  background-color: black;
+  justify-content: space-evenly;
+  > * {
+    margin-top: 40px;
+    padding: 20px;
+    width: 300px;
+    height: 80%;
+
+    > h3 {
+      color: white;
+      font-size: 20px;
+      font-weight: 800;
+      margin: 25px 0px;
+    }
+  }
+  > .footer-feliciano {
+    > p {
+      color: $grayText;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    > div {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      i {
+        color: white;
+        width: 40px;
+        height: 40px;
+        padding: 14px;
+        background-color: rgb(46, 45, 45);
+        border-radius: 50px;
+        font-size: 10px;
+        margin: 10px;
+      }
+    }
+  }
+  > .footer-open {
+    > div {
+      width: 100%;
+      height: 80%;
+      display: flex;
+      justify-content: space-between;
+      > * {
+        color: $grayText;
+        line-height: 1.6;
+      }
+      > div {
+        &:nth-of-type(1) {
+          width: 50px;
+        }
+        &:nth-of-type(2) {
+          width: 100px;
+        }
+      }
+    }
+  }
+  > .footer-instagram {
+    > div {
+      width: 100%;
+      height: 50%;
+      > figure {
+        width: 33%;
+        height: 50%;
+        > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  > .footer-newsletter {
+    > p {
+      color: $grayText;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    > input {
+      background-color: rgba(255, 255, 255, 0.1) !important;
+      /* color: white !important; */
+      padding: 13px;
+      width: 230px;
+      height: 50px;
+
+      text-align: center;
+      font-size: 18px;
+      outline: none;
+      border: none;
+      border-radius: 5px;
+      margin: 10px 0px;
+    }
+    > div {
+      width: 230px;
+      height: 50px;
+      background-color: $primaryColor;
+      color: white;
+      font-size: 18px;
+      padding: 13px;
+      text-align: center;
+
+      border-radius: 5px;
+    }
+  }
+}
+
+.line {
+  width: 100%;
+  background-color: rgba(191, 191, 191, 0.145);
+  min-height: 1px;
+}
+
+.style-title2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.iconColor{
+  color: $primaryColor 
+}
