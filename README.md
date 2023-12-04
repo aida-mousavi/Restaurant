@@ -8,7 +8,7 @@
 
 - Created - 2023-7
 
-- Technologies Used - HTML5 , Sass , Bootstrap5
+- Technologies Used - HTML5 , Css
 
 - Role - Frontend
 
